@@ -277,6 +277,7 @@ module.exports = function(grunt) {
 		'clean:dist',
 		'copy',
 		'sass',
+		'autoprefixer',
 		'bake'
 	]);
 
