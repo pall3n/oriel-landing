@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Arbutus+Slab|Alef);
+
+.heading {
+	font-family: $FontFamily-copy;
+	margin-top: 54px;
+	color: #434343;
+}
+
+.heading--attr {
+	font-size: $FontSize-5 - 2px;
+	line-height: 1.4;
+
+	@include respond-to(500px) {
+        font-size: $FontSize-5;
+    }
+}
+
+.logo {
+	text-indent: -99999px;
+	background: url(../img/oriel-logo.svg) no-repeat center center;
+	background-size: 200px auto;
+	line-height: 190px;
+}

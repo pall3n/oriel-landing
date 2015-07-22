@@ -1,0 +1,78 @@
+@font-face {
+	font-family: 'ro-icon';
+	src:url('fonts/ro-icon.eot?56j7pj');
+	src:url('fonts/ro-icon.eot?#iefix56j7pj') format('embedded-opentype'),
+		url('fonts/ro-icon.woff?56j7pj') format('woff'),
+		url('fonts/ro-icon.ttf?56j7pj') format('truetype'),
+		url('fonts/ro-icon.svg?56j7pj#ro-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="ro-"], [class*=" ro-"] {
+	font-family: 'ro-icon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+
+	text-decoration: none;
+	font-size: 58px;
+	line-height: 1.2;
+	padding: 0 2px 0;
+	color: #00a09a;
+	border: none;
+
+	&:hover {
+		color: #434343;
+	}
+}
+
+.ro-social-twitter-circular:before {
+	content: "\e600";
+}
+.ro-social-facebook-circular:before {
+	content: "\e601";
+}
+
+a {
+	background: transparent;
+	text-decoration: none;
+	color: #00a09a;
+	border-bottom: 1px solid #bbb;
+
+	&:hover {
+		border-bottom-color: #00a09a;
+	}
+}
+
+
+
+
+h1 {
+	font-size: $FontSize-1 - 8px;
+	line-height: 1.2;
+	margin: $Leading 0 0;
+
+	@include respond-to(500px) {
+        font-size: $FontSize-1;
+        margin: $Leading*2 0 0;
+    }
+}
+
+h2 {
+	font-size: $FontSize-5;
+	line-height: 1.2;
+	margin: 0;
+
+	@include respond-to(500px) {
+        font-size: $FontSize-b + 2px;
+    }
+}

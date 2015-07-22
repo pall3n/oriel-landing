@@ -1,0 +1,43 @@
+// --------------------------------------------------------------------------
+// Grid component
+// --------------------------------------------------------------------------
+
+//
+// Generate grid
+// Generate a 12 column grid for general use
+//
+
+@include generateColumns();
+@include generateOffsets();
+
+.column-6 {
+	width: 50%;
+}
+
+.column-12 {
+	width: 100%;
+}
+
+
+
+//
+// Grid row
+//
+
+.#{$Row-selector} {
+	@include row(false);
+
+	.#{$Row-selector} {
+		@include row-nested();
+	}
+}
+
+
+
+//
+// Grid Column
+//
+
+.#{$Column-selector} {
+	@include column();
+}

@@ -1,0 +1,46 @@
+// --------------------------------------------------------------------------
+// Panel component
+// --------------------------------------------------------------------------
+
+//
+// Panel
+//
+
+.panel {
+	padding-top: $Leading * 6;
+	padding-bottom: $Leading * 6;
+}
+
+
+
+//
+// Panel landing
+//
+
+.panel--landing {
+    background: url(../img/oriel-pattern.svg) ;
+    // background: rgba(170, 189, 181, 0.92);
+    background-size: 114px;
+
+    min-height: $Leading * 16;
+
+    @include respond-to(500px) {
+        min-height: $Leading * 26;
+    }
+}
+
+
+
+//
+// Panel footer
+//
+
+.panel--footer {
+    padding-top: $Leading * 6;
+    padding-bottom: $Leading * 6;
+
+    @include respond-to(500px) {
+        padding-top: $Leading * 12;
+        padding-bottom: $Leading * 12;
+    }
+}
